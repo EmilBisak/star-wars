@@ -1,0 +1,13 @@
+.flex-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.flex-item {
+  width: 200px;
+  padding: 10px;
+  margin-bottom: 20px;
+}

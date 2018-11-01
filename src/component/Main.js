@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import './main.css';
 
 class Main extends Component {
 
@@ -37,21 +37,26 @@ class Main extends Component {
 
         let peopleJSX = people.map((el, i) => {
             return (
-                <li key={i}>
-                    <h2>name: {el.name} </h2>
+                <div 
+                    key={i}
+                    className="flex-item"
+                    style={{background: el.eye_color, display: "inline-block"}}
+                >
+                    <h2>{el.name} </h2>
                     <p>eye color: {el.eye_color} </p>
                     <p>height: {el.height} </p>
                     <p>hair color: {el.hair_color} </p>
                     <p>mass: {el.mass} </p>
-                </li>)
+                </div>)
         })
 
         return (
             <div>
                 <input type="text" placeholder="Search" style={{ width: "50%", margin: "0 auto", display: "table" }} />
-                <ul>
+
+                <div className="flex-wrapper">
                     {peopleJSX}
-                </ul>
+                </div>
             </div>
         )
     }
