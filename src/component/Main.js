@@ -40,7 +40,13 @@ class Main extends Component {
                 <div 
                     key={i}
                     className="flex-item"
-                    style={{background: el.eye_color, display: "inline-block"}}
+                    style={{
+                        background: el.eye_color, 
+                        display: "inline-block",
+                        height: 2*el.height+"px",
+                        border: "1px solid black",
+                        borderBottom: el.mass+"px solid black",
+                    }}
                 >
                     <h2>{el.name} </h2>
                     <p>eye color: {el.eye_color} </p>

@@ -4,6 +4,7 @@
   justify-content: space-between;
   padding-left: 10%;
   padding-right: 10%;
+  align-items: flex-end;
 }
 
 .flex-item {
