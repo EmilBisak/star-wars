@@ -9,20 +9,20 @@ class App extends Component {
 
   state = {
     people: []
-}
+  }
 
   componentDidMount() {
     axios.get('https://swapi.co/api/people/')
-        .then(response => response)
-        .then(json => {
-            this.setState({
-                people: json.data.results
-            })
+      .then(response => response)
+      .then(json => {
+        this.setState({
+          people: json.data.results
         })
-        .catch(function (error) {
-            console.log(error);
-        });
-}
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+  }
 
   render() {
     return (
