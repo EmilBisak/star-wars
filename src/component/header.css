@@ -1,0 +1,12 @@
+header {
+    text-align: center;
+    background-color: #000;
+    height: 4rem;
+}
+
+header h1 {
+    color: #fff;
+    margin-top: 0;
+    line-height: 4rem;
+}
+
